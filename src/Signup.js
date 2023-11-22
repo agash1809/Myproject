@@ -2,8 +2,10 @@
 
 import React, { useState } from 'react';
 import './Signup.css';
+import { useNavigate } from 'react-router-dom';
 
 const BankingSignUp = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -141,7 +143,8 @@ const BankingSignUp = () => {
           <span className="error-message">{formErrors.confirmPassword}</span>
         </div>
 
-        <button type="submit">REGISTER</button>
+        <button onClick={()=>navigate('/home')} type="submit">REGISTER</button>
+        {/* <button type="submit">REGISTER</button> */}
       </form>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
 
-    <div> 
+    <div className='body'> 
     <nav class="navbar background"> 
         <ul class="nav-list"> 
           
@@ -26,22 +26,32 @@ export default function Home() {
             
         </div> 
     </nav> 
+    <div>
+        <div className='offer'>
+        <h1>What we offer for you</h1>
+        <br></br>
+        <p>We provide online instant cash loans with quick approval that suit your team
+        </p>
+        </div>
     <div className='mc'>
-        <section className='c'>
-            <p className='cw'>
-                FOR YOUR SAFE AND SECURE TRANSACTION
-            </p>
-            
-            
-            
-               <b className='bn'>TCIC</b>  <p>Never ask for confidential information such as PIN and OTP from customers.<br></br>
-                Any such call can be made by a fraudster. Please do not share personal info.</p>
-            
-                
-        </section>
-        <section className='cimg'>
+        <div className='clogo'>
+            <div className='aimg' >
 
-        </section>
+            </div>
+
+        
+
+        </div>
+        <div className='clogo blogo'>
+        
+
+        </div>
+        <div className='clogo dlogo'>
+        
+
+        </div>
+        </div>
+        
     </div>
     <div className='blogo'>
         <section>
