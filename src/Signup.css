@@ -7,20 +7,26 @@
   height: 100vh;
   background-color: #f4f4f4;
    /* background-image:url("D:\Pictures\Saved Pictures\fmp.jpg"); */
-   background-image:url("C:\Users\agaas\Downloads\sl_020622_4930_13.jpg");
+   /* background-image:url("C:\Users\agaas\Downloads\sl_020622_4930_13.jpg"); */
+   background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
   
   background-repeat: no-repeat;
   background-size:1600px 900px;
+  gap: 100px;
   
 }
 
 .banking-sign-up-form {
   width: 400px;
   padding: 40px;
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
   border-radius: 10px;
-  margin-left: 700px;
+  margin-left: 110px;
+  background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
+  width: 600;
+
 }
 
 h2 {
@@ -55,7 +61,7 @@ input {
 }
 
 button {
-  background-color: #00ff51ed;
+  background-color: #11682ded;
   color: white;
   padding: 14px;
   border: none;
@@ -67,4 +73,25 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+.rb{
+  text-align: center;
+}
+.bankname{
+  height: 600px;
+  width: 600px;
+  text-align: center;
+  color: linear;
+  margin-top: 300px;
+  
+}
+.bankname {
+  
+}
+
+.banklogo{
+  font-size: 60px;
+  background: linear-gradient(to right,rgb(220, 191, 141),rgb(17, 0, 255),rgb(255, 0, 0),rgb(255, 0, 76));
+  -webkit-background-clip: text;
+  color: transparent;
 }

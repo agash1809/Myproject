@@ -1,0 +1,27 @@
+.aboutp{
+    
+    background: linear-gradient(rgb(192, 213, 234),rgb(77, 69, 223));
+     height: 100vh;
+    width: 1530px; 
+    /* display: flex; */
+   /* justify-content:row; */
+   align-items: center;
+   text-align: center;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+.av{
+    /* background-color: azure; */
+    /* height: 100px; */
+    background: linear-gradient(rgb(192, 213, 234),rgb(77, 69, 223));
+    
+}
+.para{
+    font-size: x-large;
+}
+.i{
+    color:black;
+
+}

@@ -7,20 +7,24 @@
 	display: flex; 
 	align-items: center; 
 	justify-content: center; 
-	position: sticky; 
+	/* position: sticky;  */
 	top: 0; 
 	cursor: pointer; 
 	
 } 
 
-.background { 
-	background:rgb(255, 255, 255); 
+ .background { 
+	
+	 background: linear-gradient(rgb(192, 213, 234),rgb(77, 69, 223)); 
+	
 	background-blend-mode: darken; 
 	background-size: cover; 
-} 
+}  
 
 .footer { 
-background-color: #000; 
+background-color: rgb(36, 36, 36); 
+    height: 250px;
+	 text-align: center;
 } 
 
 .nav-list { 
@@ -44,12 +48,20 @@ background-color: #000;
 
 .nav-list li a { 
 	text-decoration: none; 
-	color: #000; 
+	color:white;
+	
 } 
 
 .nav-list li a:hover { 
-	color: gray;
+	/* color:rgb(180, 174, 174); */
+	color: rgb(34, 34, 106);
+	 text-decoration:underline; 
 } 
+.nav-list li :hover{
+	color: beige;
+}
+
+
 
 .rightnav { 
 	width: 30%; 
@@ -60,17 +72,26 @@ background-color: #000;
 margin-left: 20px; 
 height: 33px; 
 width: 90px; 
-	color: #fff; 
-background-color: rgb(204, 174, 116); 
+	color: blue; 
+	font-weight: bold;
+
+
+background-color: #fff;
 	cursor: pointer; 
 } 
+.btn :hover{
+	color: gray;
+}
 .btm{ 
 margin-left: 20px; 
 height: 33px; 
 width: 90px; 
-	color: #fff; 
-background-color: rgb(106, 196, 106);
+	
+	color: blue;
+	background: white;
+	font-weight: bold;
 	cursor: pointer; 
+	
 } 
 
 .btn-sm { 
@@ -79,10 +100,10 @@ background-color: rgb(106, 196, 106);
 } 
 
 
-
+	
 .text-footer { 
 	text-align: center; 
-	padding: 30px 0; 
+	padding: 30px ; 
 	font-family: 'Ubuntu', sans-serif; 
 	display: flex; 
 	justify-content: center; 
@@ -100,16 +121,7 @@ background-color: rgb(106, 196, 106);
 	border: 1px solid black;
 
 }
-.cimg{
-	background-color: olivedrab;
-	height: 600px;
-	width:700px;
-	display: flex;
-	flex-direction: column;
-	background-image: url("D:\Pictures\Saved Pictures\banking-payment-banner-set_98292-1129.jpg");
-	background-size: 700px 600px;
-	
-}
+
 .mc{
 	display: flex;
 	flex-direction: row;
@@ -119,10 +131,11 @@ background-color: rgb(106, 196, 106);
 	margin-left:80px ;
 	gap: 50PX;
 	padding: 0 30px 60px;
-	/* padding: 10px; */
-	
-	
-	/* background: linear-gradient(#e66465, #9198e5); */
+
+}
+.mc :hover{
+	box-shadow: 0px 8px 16px 0px rgba(141, 141, 141, 0.9);
+	transform: scale(1.045);
 }
 .nc{
 	display: flex;
@@ -132,68 +145,197 @@ background-color: rgb(106, 196, 106);
 	margin-top: 50px;
 	margin-left: 80px;
 	text-align: center;
-	/* padding: 10px; */
+
 	padding: 0 30px 60px;
 	
 	
-	/* background: linear-gradient(#e66465, #9198e5); */
 }
 
 
 
 .clogo{
+	
 	display: flex;
 	flex-direction: column;
 	background-color: #000;
 	width: 400px;
 	height: 500px;
-	/* background-color: gainsboro */
-	background: linear-gradient(rgb(234, 219, 192),rgb(149, 100, 10));
-	opacity: 0.2;
+	
+	background: linear-gradient(rgb(192, 213, 234),rgb(15, 10, 149));
+	
 	border-top-right-radius:4%;
 	border-top-left-radius: 4%;
 	border-bottom-left-radius: 4%;
 	border-bottom-right-radius: 4%;
-	
-	
 
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+	/* pointer-events: none; */
 }
+
+
+
 .slogo{
 	display: flex;
 	flex-direction: row;
 	background-color: #000;
 	width: 400px;
 	height: 500px;
-	/* background: linear-gradient(top, #0a8cff 0%,#054680 100%); */
+	
 }
 .offer{
 	margin-top: 100px;
 	text-align: center;
-	/* color: rgb(0, 132, 255); */
+	position: relative;
+	color: white;
+	
 	
 }
+
 h1{
 	color: white;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p{
 	color:white;
+	pointer-events: none;
 }
+
 .body{
 	
-	background: linear-gradient(#8b79db, #6f0a9edd);
+	
+	background: linear-gradient(rgb(192, 213, 234),rgb(15, 10, 149));
 }
 .aimg{
 	margin-top: 100px;
-	background-image: url("D:\Pictures\Screenshots\Screenshot_20230328_160323.png");
+	background-image: url("https://pic.onlinewebfonts.com/thumbnails/animations_546512.svg?width=6");
+pointer-events: none;
 	width: 100px;
 	height: 100px;
-	margin-left: 100px;
-	display: flex;
-	justify-content: center;
+	margin-left: 150px;
+	margin-top: 90px;	
+}
+.bimg{
+	margin-top: 100px;
+	background-image: url("https://pic.onlinewebfonts.com/thumbnails/animations_508747.svg?width=6");
+	width: 100px;
+	height: 100px;
+	margin-left: 150px;
+	margin-top: 90px;	
+	pointer-events: none;
+}
+.cimg{
+	margin-top: 100px;
+	background-image: url("https://pic.onlinewebfonts.com/thumbnails/icons_187930.svg?width=6");
+	width: 100px;
+	height: 100px;
+	margin-left: 150px;
+	margin-top: 90px;
+	pointer-events: none;
+}
+h3{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	pointer-events: none;
+}
+ul{
+	margin-top: 15px;
+	text-align: left;
+	color: white;
+    font-size:large;
+	list-style:circle;
+	margin-left: 70px;
+
+}
+
+li{
+	list-style-position:inside;
+}
+button:hover{
+color: white;
 
 
+}
+.dropcontent {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 200px;
+	/* height: 100px; */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	z-index: 1;
+	border-radius: 8px;
+	text-align: center;
+	font-family:'Times New Roman', Times, serif;
+  }
+  .dropbtn {
+
 	
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+  }
+  .dropdown {
+	position: relative;
+
+
+  }
+  .dropcontent a {
+	color:blue;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  .dropcontent a:hover {
+	background-color: #ddd;
+	background-color: rgb(113, 113, 221);
+	color: white;
+}
+
+.dropdown:hover .dropcontent {display: block;
+	color: black;
+}
+.bt{
+	height: 33px;
+	width: 110px;
+	background-color: #fff;
+	color: red;
+	font-weight: bold;
+	font-family:'Times New Roman', Times, serif;
+}
+.bt :hover{
+	color: white;
+	background-color: red;
+
+}
+.ulh {
+	pointer-events: none;
+
+}
+
+
+img{
+	padding: 2px;
+}
+h4{
+	color: orangered;
+}
+h1{
+	color: white;
+}
+.BL{
 	
-	
+		background: linear-gradient(to right,rgb(215, 220, 141),rgb(17, 0, 255),rgb(255, 0, 0),rgb(255, 0, 76));
+		-webkit-background-clip: text;
+		color: transparent;
+		font-size: 30px;
+		/* height: 100px; */
+		/* margin-left: 50px; */
+		text-align: center;
+		/* margin-top: 30px; */
+		font-style: italic;
+		font-weight: bold;
+
+	  
 }

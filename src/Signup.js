@@ -77,6 +77,13 @@ const BankingSignUp = () => {
 
   return (
     <div className="banking-sign-up-container">
+    <div className='bankname'>
+
+      <h1 className='banklogo'>
+        INNOVATE BANK
+      </h1>
+    <p>A Safe and Secure Bank for your money and assets</p>
+    </div>
       <form className="banking-sign-up-form" onSubmit={handleSubmit}>
         <h2>NEW REGISTRATION</h2>
 
@@ -142,8 +149,10 @@ const BankingSignUp = () => {
           />
           <span className="error-message">{formErrors.confirmPassword}</span>
         </div>
+<div className='rb'>
 
-        <button onClick={()=>navigate('/home')} type="submit">REGISTER</button>
+        <button onClick={()=>navigate('/login')} type="submit">REGISTER</button>
+</div>
         {/* <button type="submit">REGISTER</button> */}
       </form>
     </div>

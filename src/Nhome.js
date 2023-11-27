@@ -41,10 +41,10 @@ export default function Home() {
 
         <div class="rightNav"> 
         
-            <button class="btm btn-sm" onClick={()=>navigate('/login')}>LOGIN</button> 
-            <button class="btn btn-sm" onClick={()=>navigate('/signup')}>SIGNUP</button> 
-            
-        </div> 
+        <button class="bt btn-sm" onClick={()=>navigate('/home')}>SIGN OUT</button> 
+        
+        
+    </div> 
     </nav> 
     <div>
         <div className='offer'>

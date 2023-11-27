@@ -8,9 +8,12 @@
   height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: white;
-  background-image:url("https://wallpaperbat.com/img/241932-open-banking-will-change-everythingeventually.jpg");
+  background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
+  /* margin-left: 200px; */
+  /* border-radius: 10px; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
-/* background-size: 25px ;  */
+
 
 }
 
@@ -37,18 +40,33 @@ input[type="submit"]:hover {
 .button-container {
   display: flex;
   justify-content: center;
+  
 }
-
+.lbtn{
+  background-color: #1d8c1e;
+  height:45px;
+ 
+}
 .login-form {
-  background-color: white;
+  /* background-color: white; */
   padding: 10rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 850px;
+  /* box-shadow: 0 4px 8px 0 rgba(8, 8, 8, 0.8), 0 6px 20px 0 rgba(8, 8, 8, 0.19); */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  margin-left: 150px;
   /* border-top-right-radius: 4px; */
   /* background-color: blue;*/
+  margin-left: 50px;
+  /* background: linear-gradient(rgb(223, 206, 173),rgb(206, 95, 20)); */
+  background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
+  width: 250px;
+  height: 300px;
+  /* border-top: 10px; */
+  border-radius: 4%;
+
   
   
 }
+
 
 .list-container {
   display: flex;
@@ -65,6 +83,7 @@ input[type="submit"]:hover {
   font-size: 35px;
   margin-bottom: 20px;
   text-align: center;
+
 }
 
 .input-container {
@@ -74,5 +93,33 @@ input[type="submit"]:hover {
   margin: 10px;
 }
 .form{
+}
+.iform{
   border-top-right-radius: 4px;
+  border-radius: 10px;
+  
+}
+
+.rs :hover{
+  text-decoration: underline;
+  color: blue;
+  font-size: medium;
+}
+.rs{
+  text-align: center;
+
+}
+/* h1{
+  color: rgb(75, 74, 74);
+}
+p{
+  color: black;
+} */
+button{
+  background-color: red;
+}
+.banklogo{
+  background: linear-gradient(to right,rgb(220, 191, 141),rgb(17, 0, 255),rgb(255, 0, 0),rgb(255, 0, 76));
+  -webkit-background-clip: text;
+  color: transparent;
 }

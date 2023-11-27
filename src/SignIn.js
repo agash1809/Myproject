@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import './SignIn.css';
 import { useNavigate } from "react-router-dom";
-import { colors } from "@mui/material";
+// import { colors } from "@mui/material";
 
 function SignIn() {
   // React States
@@ -58,7 +58,7 @@ function SignIn() {
   // JSX code for login form
   const renderForm = (
     <div className="form">
-      <form onSubmit={handleSubmit}>
+      <form className="iform" onSubmit={handleSubmit} >
         <div className="input-container">
           <label>Username </label>
           <input type="text" name="uname" required />
@@ -70,12 +70,12 @@ function SignIn() {
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">
-          <input type="submit" />
+          <button onClick={()=>navigate('/Nhome')} className="lbtn">LOGIN</button>
         
         </div>
         <br></br>
         <div className="rs">
-          <label onClick={()=>navigate('/signup')}>New User? Register</label>
+          <label onClick={()=>navigate('/signup') }  >New User? Register</label>
         </div>
         
       </form>
@@ -84,7 +84,12 @@ function SignIn() {
 
   return (
     <div className="app">
+      <h1 className="banklogo">
+        INNOVATE-BANK
+      </h1>
+      <p>A Safe and Secure Bank for your money and assets</p>
       <div className="login-form">
+        
         <div className="title">Sign In</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
