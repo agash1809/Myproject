@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import './Loan.css'; // Import your CSS file
+import './Loan.css';
+
+import { useNavigate } from 'react-router-dom';
+// const navigate = useNavigate();
 
 const TransPage = () => {
   const [loanAmount, setLoanAmount] = useState('');
+  const [name, setName] = useState('');
+
   const [loanTerm, setLoanTerm] = useState('');
   const [interestRate, setInterestRate] = useState('');
+  const [mpin, setMpin] = useState('');
   const [monthlyPayment, setMonthlyPayment] = useState(null);
 
   const calculateMonthlyPayment = () => {
-    // Basic mortgage payment calculation
+ 
     const principal = parseFloat(loanAmount);
     const term = parseInt(loanTerm);
     const rate = parseFloat(interestRate) / 100 / 12;
@@ -20,6 +26,7 @@ const TransPage = () => {
     setMonthlyPayment(monthlyPaymentResult);
   };
 
+  const navigate = useNavigate();
   return (
     <div className="home-loan-container">
       <h2>Transaction</h2>
@@ -30,8 +37,8 @@ const TransPage = () => {
           Beneficiary Name:*
           <input
             type="text"
-            value={loanAmount}
-            onChange={(e) => setLoanAmount(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </label>
         <label>
@@ -65,13 +72,13 @@ const TransPage = () => {
           MPIN*
           <input
             type="password" required
-            value={interestRate}
-            onChange={(e) => setInterestRate(e.target.value)}
+            value={mpin}
+            onChange={(e) => setMpin(e.target.value)}
           />
         </label>
         
 
-        <button onClick={calculateMonthlyPayment}>Transfer Amount</button>
+        <button onClick={()=>navigate('/transsuc')}>Transfer Amount</button>
       </div>
 
 

@@ -6,8 +6,7 @@
   align-items: center;
   height: 100vh;
   background-color: #f4f4f4;
-   /* background-image:url("D:\Pictures\Saved Pictures\fmp.jpg"); */
-   /* background-image:url("C:\Users\agaas\Downloads\sl_020622_4930_13.jpg"); */
+
    background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
   
   background-repeat: no-repeat;
@@ -83,9 +82,6 @@ button:hover {
   text-align: center;
   color: linear;
   margin-top: 300px;
-  
-}
-.bankname {
   
 }
 

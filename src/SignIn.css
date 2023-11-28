@@ -1,105 +1,57 @@
-.app {
-  font-family: sans-serif;
+
+
+.bigrow
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 150px;
+    /* background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10)); */
+    text-align: center;
+}
+
+
+#goda
+{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.column2
+{
+    background-color: white;
+    /* background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10)); */
+    margin-right: 100px;    
+    margin-bottom: 100px;
+    text-align: center;
+}
+#logico
+{
+    /* background-image: url("https://www.shutterstock.com/image-vector/illustration-login-form-pop-on-260nw-601018952.jpg"); */
+    background-color: black;
+    margin-top: 10px;
+}
+.inside
+{
+    margin-left: 20px;
+}
+.column1
+{
+    margin-right: 50px;
+    margin-left: 200px;
+}
+#head
+{
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  height: 100vh;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: white;
-  background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
-  /* margin-left: 200px; */
-  /* border-radius: 10px; */
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
-
-
 }
-
-input[type="text"],
-input[type="password"] {
-  height: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+.logoof{
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    height: 130px;
+    /* background-image: url("C:\Users\hp5cd\OneDrive\Desktop\HIRESMART logo.png"); */
 }
-
-input[type="submit"] {
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 15px;
-  background: #01d28e;
-  border: 1px solid #01d28e;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-input[type="submit"]:hover {
-  background: #6cf0c2;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  
-}
-.lbtn{
-  background-color: #1d8c1e;
-  height:45px;
- 
-}
-.login-form {
-  /* background-color: white; */
-  padding: 10rem;
-  /* box-shadow: 0 4px 8px 0 rgba(8, 8, 8, 0.8), 0 6px 20px 0 rgba(8, 8, 8, 0.19); */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-  margin-left: 150px;
-  /* border-top-right-radius: 4px; */
-  /* background-color: blue;*/
-  margin-left: 50px;
-  /* background: linear-gradient(rgb(223, 206, 173),rgb(206, 95, 20)); */
-  background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
-  width: 250px;
-  height: 300px;
-  /* border-top: 10px; */
-  border-radius: 4%;
-
-  
-  
-}
-
-
-.list-container {
-  display: flex;
-}
-
-.error {
-  color: red;
-  font-size: 13.5px;
-}
-
-.title {
-  color: black;
- 
-  font-size: 35px;
-  margin-bottom: 20px;
-  text-align: center;
-
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 10px;
-}
-.form{
-}
-.iform{
-  border-top-right-radius: 4px;
-  border-radius: 10px;
-  
-}
-
 .rs :hover{
   text-decoration: underline;
   color: blue;
@@ -109,17 +61,8 @@ input[type="submit"]:hover {
   text-align: center;
 
 }
-/* h1{
-  color: rgb(75, 74, 74);
-}
-p{
-  color: black;
-} */
-button{
-  background-color: red;
-}
-.banklogo{
-  background: linear-gradient(to right,rgb(220, 191, 141),rgb(17, 0, 255),rgb(255, 0, 0),rgb(255, 0, 76));
-  -webkit-background-clip: text;
-  color: transparent;
+.sbody{
+  background: linear-gradient(rgb(223, 206, 173),rgb(229, 98, 10));
+  height: 1000px;
+  text-align: center;
 }

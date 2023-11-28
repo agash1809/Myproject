@@ -12,14 +12,15 @@ import HomeLoanPage from './Loan.js';
 import TransPage from './Transaction.js';
 import AccountDetailsPage from './AccountDetailsPage.js';
 import ContactPage from './Contact.js';
+import TransSuc from './TransSuc.js';
 function App() {
   return (
     <div>
       <Router>
         <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='login' element={<SignIn />} />
-        <Route path='signup' element={<BankingSignUp />} />
+        <Route path='/login' element={<SignIn />} />
+        <Route path='/signup' element={<BankingSignUp />} />
         <Route path='/home' element={<Home/>}/>
         <Route path='/Nhome' element={<Nhome/>}/>
         <Route path='/Aboutpage' element={<AboutPage/>}></Route>
@@ -28,9 +29,11 @@ function App() {
         <Route path='/TransactionHistory' element={<TransactionPage/>}></Route>
         <Route path='/AccountDetailsPage' element={<AccountDetailsPage/>}></Route>
         <Route path='/ContactPage' element={<ContactPage/>}></Route>
+        <Route path='/transsuc' element={<TransSuc/>}></Route>
         
         </Routes>
       </Router>
+   
       
           
     </div>

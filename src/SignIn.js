@@ -1,100 +1,87 @@
-import React, { useState } from "react";
 
-import './SignIn.css';
-import { useNavigate } from "react-router-dom";
-// import { colors } from "@mui/material";
 
-function SignIn() {
-  // React States
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+import React, { useRef, useState, useContext } from 'react';
+import { TextField , Button , Container} from '@mui/material';
+import {Link, useNavigate } from 'react-router-dom';
+import './SignIn.css'
 
-  // User Login info
-  const database = [
-    {
-      username: "user1",
-      password: "pass1"
-    },
-    {
-      username: "user2",
-      password: "pass2"
-    }
-  ];
+import axios from 'axios';
 
-  const errors = {
-    uname: "invalid username",
-    pass: "invalid password"
-  };
-  const navigate = useNavigate();
+const SignIn= () => {
+
+  const [email, setMailid] = useState('');
+  const handleMail = (event) => { 
+      setMailid(event.target.value) 
+  }
+  const [password, setPassword] = useState('');
+  const handlePassword = (event) => { 
+      setPassword(event.target.value) 
+  }
   const handleSubmit = (event) => {
-    //Prevent page reload
+
     event.preventDefault();
-
-    var { uname, pass } = document.forms[0];
-
-    // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
-
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
+    axios.get(`http://localhost:3000/users?email=${email}&password=${password}`)
+      .then(res=>{
+        if(res.data.length>0)
+        {
+           navigate("/Nhome");
+        }
+        else{
+          alert("User account doesn't exist");
+        }
       }
-    } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
-    }
-  };
 
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
+        )
+      
+  }
 
-  // JSX code for login form
-  const renderForm = (
-    <div className="form">
-      <form className="iform" onSubmit={handleSubmit} >
-        <div className="input-container">
-          <label>Username </label>
-          <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
-        </div>
-        <div className="input-container">
-          <label>Password </label>
-          <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
-        </div>
-        <div className="button-container">
-          <button onClick={()=>navigate('/Nhome')} className="lbtn">LOGIN</button>
-        
-        </div>
-        <br></br>
-        <div className="rs">
-          <label onClick={()=>navigate('/signup') }  >New User? Register</label>
-        </div>
-        
-      </form>
-    </div>
-  );
+  let navigate=useNavigate();
+  let gotosignup=useNavigate();
 
   return (
-    <div className="app">
-      <h1 className="banklogo">
-        INNOVATE-BANK
+    <div className='sbody'>
+    <>
+    <div className='logoof'>
+    </div>
+    <div className='bigrow'>
+      <Container className="column1">
+        {/* <img src='https://i.pinimg.com/564x/0c/9b/89/0c9b89b62ba04b4b4740f4ce2da28b54.jpg'></img> */}
+        <h1 className="banklogo">         INNOVATE-BANK
       </h1>
-      <p>A Safe and Secure Bank for your money and assets</p>
-      <div className="login-form">
-        
-        <div className="title">Sign In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
-      </div>
+      <br></br>
+    <p>A Safe and Secure Bank for your money and assets</p>
+      </Container>
+    <Container  maxWidth='xs' className="column2" >
+
+        <h1 id="head">Login</h1>
+        <form onSubmit={handleSubmit}>
+
+          <TextField variant="outlined" margin="normal" required fullWidth label="Email" onChange={handleMail}>
+              {email}
+          </TextField>
+
+          <TextField variant="outlined" margin="normal" required fullWidth label="Password" type="password" onChange={handlePassword}>
+              {password}
+          </TextField>
+
+          
+
+          <Button type="submit" fullWidth variant="contained" color="primary">
+            Log In
+          </Button>
+          <br></br>
+          <br></br>
+       
+           <br></br>      
+             <div className="rs">         
+              <label onClick={()=>navigate('/signup') }  >New User? Register</label>
+       </div>
+        </form>
+    </Container>
+    </div>
+    </>
     </div>
   );
-}
+};
 
-export default SignIn;
+export default SignIn ;
