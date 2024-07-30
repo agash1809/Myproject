@@ -87,13 +87,7 @@ const BankingSignUp = () => {
 
   return (
     <div className="banking-sign-up-container">
-    <div className='bankname'>
-
-      <h1 className='banklogo'>
-        INNOVATE BANK
-      </h1>
-    <p>A Safe and Secure Bank for your money and assets</p>
-    </div>
+   
       <form className="banking-sign-up-form" onSubmit={handleSubmit}>
         <h2>NEW REGISTRATION</h2>
 

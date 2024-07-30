@@ -22,8 +22,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div>
-      <h2>Contact Us</h2>
+    <div className='contact-body'>
+      <h2 className='contact-h2'>Contact Us</h2>
     <div className="contact-container">
 
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -70,7 +70,7 @@ const ContactPage = () => {
           ></textarea>
         </label>
 
-        <button type="submit">Submit</button>
+        <button type="submit" style={{backgroundColor:"#091a32"}}>Submit</button>
       </form>
     </div>
     </div>

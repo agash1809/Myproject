@@ -1,11 +1,19 @@
+.contact-body{
+  background-color: #091a32;
+  height: 100vh;
+}
 .contact-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
     margin-left: 600px;
   }
   
-  h2 {
-    color: #333;
+  .contact-body h2{
+    color:white;
+  }
+  .contact-h2{
+    margin-left: 700px;
+    /* margin-top: 100px; */
   }
   
   .contact-form {
@@ -16,6 +24,7 @@
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -50px;
   }
   
   label {
@@ -44,6 +53,6 @@
   }
   
   button:hover {
-    background-color: #2980b9;
+    background-color: #06273d;
   }
   

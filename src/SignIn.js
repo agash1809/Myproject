@@ -44,13 +44,7 @@ const SignIn= () => {
     <div className='logoof'>
     </div>
     <div className='bigrow'>
-      <Container className="column1">
-        {/* <img src='https://i.pinimg.com/564x/0c/9b/89/0c9b89b62ba04b4b4740f4ce2da28b54.jpg'></img> */}
-        <h1 className="banklogo">         INNOVATE-BANK
-      </h1>
-      <br></br>
-    <p>A Safe and Secure Bank for your money and assets</p>
-      </Container>
+
     <Container  maxWidth='xs' className="column2" >
 
         <h1 id="head">Login</h1>
